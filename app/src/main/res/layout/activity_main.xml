@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.jojigarcia.impuestoscalculator.MainActivity">
+
+    <EditText
+        android:id="@+id/conceptoField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Concepto"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <Button
+        android:id="@+id/btCalculateIVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular IVA"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <Button
+        android:id="@+id/btSubIVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desglosar IVA"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <TextView
+        android:id="@+id/moneyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+</android.support.constraint.ConstraintLayout>
