@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         btCalculateIVA!!.setOnClickListener {
             saldoIntroducido = (conceptoField.toString()).toDouble()
-            /*saldo = saldoIntroducido / IVA
+            saldo = saldoIntroducido / IVA
             moneyText!!.text = saldo.toString()
-            println("IYOOOOOO" + saldo.toString())*/
+            println("IYOOOOOO" + saldo.toString())
         }
     }
 }
