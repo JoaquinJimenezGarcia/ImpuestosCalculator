@@ -13,8 +13,13 @@
         android:ems="10"
         android:hint="Concepto"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="233dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toTopOf="@+id/btCalculateIVA" />
 
     <Button
         android:id="@+id/btCalculateIVA"
@@ -22,7 +27,8 @@
         android:layout_height="wrap_content"
         android:text="Calcular IVA"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="56dp" />
 
     <Button
         android:id="@+id/btSubIVA"
@@ -30,14 +36,21 @@
         android:layout_height="wrap_content"
         android:text="Desglosar IVA"
         tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="56dp" />
 
     <TextView
         android:id="@+id/moneyText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0.0"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/conceptoField" />
 
 </android.support.constraint.ConstraintLayout>
