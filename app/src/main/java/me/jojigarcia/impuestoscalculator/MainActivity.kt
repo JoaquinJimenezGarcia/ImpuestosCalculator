@@ -12,9 +12,9 @@ class MainActivity : AppCompatActivity() {
     private var btSubIVA: Button? = null
     private var conceptoField: EditText? = null
     private var moneyText: TextView? = null
-    private var saldo: Double = 0.0
-    private var saldoIntroducido: Double = 0.0
-    private var IVA: Double = 0.79
+    private var saldo: Double = 0.0 // Guardará el valor de saldo que se mostrará en "moneyText" tras sus cálculos.
+    private var saldoIntroducido: Double = 0.0 // Valor en Double de lo que se inserta en "conceptoField"
+    private var IVA: Double = 0.79 // Porcentaje de impuestos
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,11 +26,12 @@ class MainActivity : AppCompatActivity() {
         moneyText = findViewById(R.id.moneyText) as TextView
 
         moneyText!!.text = "0.0€"
-        saldoIntroducido = java.lang.Double.parseDouble(conceptoField.toString())
 
         btCalculateIVA!!.setOnClickListener {
-            saldo = saldoIntroducido / IVA
+            saldoIntroducido = (conceptoField.toString()).toDouble()
+            /*saldo = saldoIntroducido / IVA
             moneyText!!.text = saldo.toString()
+            println("IYOOOOOO" + saldo.toString())*/
         }
     }
 }
